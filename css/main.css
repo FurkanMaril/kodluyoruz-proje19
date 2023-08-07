@@ -1,0 +1,110 @@
+main .main-bg {
+    background-color: #f78501;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    padding: 50px 0px;
+}
+main .main-bg .logo-bg{
+    background-color: #fff;
+    width: 450px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+main .main-bg .logo-bg img{
+    width: auto;
+    height: 40px;
+}
+main .main-bg > h3{
+    color: #fff;
+    margin: 10px 0px;
+}
+main .main-bg form {
+    width: 100%;
+    padding: 0px 40px;
+}
+main .main-bg form .input-group button{
+    width: 200px;
+    border: none;
+    background-color: #424242;
+    color: #fff;
+    transition: 0.3s;
+}
+main .main-bg form .input-group button:hover{
+    background-color: #5f5f5f;
+}
+main .main-bg form .input-group input:focus, main .main-bg .input-group input:focus-visible{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+main .list-group {
+    border-radius: 0;
+}
+main .list-group .list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    border: none;
+}
+main .list-group .list-group-item span{
+    padding: 12px 20px;
+}
+main .list-group .list-group-item span i{
+    padding-right: 10px;
+    visibility: hidden;
+}
+main .list-group .list-group-item a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    text-decoration: none;
+}
+main .list-group .list-group-item a:hover{
+    background-color: #f78501;
+}
+main .list-group .list-group-item a > i{
+    color: #818182;
+    pointer-events: none;
+}
+main .list-group .list-group-item a:hover i{
+    color: #fff;
+}
+main .list-group .list-group-item:nth-child(odd){
+    background-color: #f8f9fa;
+}
+main .list-group .list-group-item:nth-child(even){
+    background-color: #fff;
+}
+main .list-group .list-group-item:hover{
+    cursor: pointer;
+    background-color: #e6e6e6;
+}
+main .list-group .list-group-item.checked{
+    background-color: darkslategray;
+    color: #fff;
+}
+main .list-group .list-group-item.checked span{
+    text-decoration: line-through;
+}
+main .list-group .list-group-item.checked span i{
+    visibility: visible;
+}
+main .list-group .list-group-item.checked a i{
+    color: #fff; 
+}
+.toast{
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    display: block;
+    position: absolute;
+}
+

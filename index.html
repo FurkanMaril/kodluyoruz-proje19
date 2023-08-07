@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>To do List - Homework 2</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="main-bg">
+                <div class="logo-bg">
+                    <img src="img/kodluyoruz-logo.png" alt="">
+                </div>
+                <h3>To do List</h3>
+                <form action="">
+                    <div class="input-group">
+                        <input id="input-box" type="text" class="form-control" placeholder="What do you do today?" aria-describedby="button-addon2">
+                        <div clasSs="input-group-append">
+                            <button class="btn" id="button-addon2" onclick="addTask()">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <ul class="list-group" id="list-box">
+            </ul>
+        </div>
+    </main>
+    <div class="toast" data-autohide="false">
+        <div class="toast-header">
+            <button type="button" class="ml-auto mb-1 close" data-dismiss="toast">&times;</button>
+        </div>
+        <div class="toast-body">
+        </div>
+    </div>
+    <script src="js/jquery.3.6.4.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/storage.js"></script>
+</body>
+</html>
